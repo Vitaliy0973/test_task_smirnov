@@ -1,13 +1,9 @@
 @import 'fonts';
-
-body {
-    font-family: CormorantUpright;
-    background-color: black;
-    h1{
-        color: green;
-    }
-}
-
-.title {
-    // font-style: italic;
-}
+@import 'global';
+@import 'page-header';
+@import 'main-nav';
+@import 'preview';
+@import 'definition';
+@import 'using';
+@import 'connection';
+@import 'footer'

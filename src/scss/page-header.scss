@@ -1,0 +1,43 @@
+.page-header__wrapper {
+  min-width: 320px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #CED20F;
+  background-color: #1B1B1B;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+
+.page-header__logo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #CED20F;
+  text-decoration: none;
+  display: block;
+  margin-left: 20px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.page-header__logo:hover {
+  color: lighten($color: #CED20F, $amount: 10%);
+}
+
+.page-header__logo:active {
+  color: lighten($color: #CED20F, $amount: 40%);
+}

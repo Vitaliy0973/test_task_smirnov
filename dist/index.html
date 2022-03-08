@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html', {
-    "title": "CSS. Введение и обзор веб-технологии"
-})
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>CSS. Введение и обзор веб-технологии</title>
+</head>
 <body>
-    @@include('html/header.html', {})
+    <header class="page-header">
+    <div class="page-header__wrapper">
+        <a href="#" class="page-header__logo">css</a>
+        <nav class="main-nav main-nav--closed">
+            <button class="main-nav__button" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#1c" class="main-nav__link main-nav__link--color">css</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#2c" class="main-nav__link">Назначение</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#3c" class="main-nav__link">Подключение</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#4c" class="main-nav__link">Правила построения</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#5c" class="main-nav__link">Селекторы</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#6c" class="main-nav__link">Классы и индентификаторы</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
     <main class="page-main">
         <section class="preview">
             <div class="preview__wrapper">
@@ -57,7 +93,13 @@
         </section>
 
     </main>
-    @@include('html/footer.html', {})
+    <footer>
+  <div class="footer__wrapper">
+    <a href="index.html" class="footer__logo">LOGO</a>
+    <a href="https://github.com/Vitaliy0973/test_task_smirnov" class="footer__github">github.com</a>
+  </div>
+</footer>
+
     <script src="js/app.min.js"></script>
 </body>
 </html>

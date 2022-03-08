@@ -1,0 +1,64 @@
+.using__separator {
+  min-width: 320px;
+  height: 34px;
+  background-color: #CED210;
+  background-image: url(./../img/using_title.png);
+  background-size: 177px;
+  background-position: top 10px left 83px;
+  background-repeat: repeat-x;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    height: 55px;
+    background-image: url(./../img/using_title_desktop.png);
+    background-size: 340px;
+    background-position: top 16px left 216px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    height: 80px;
+    background-size: 470px;
+    background-position: top 24px left 264px;
+  }
+}
+
+.using__wrapper {
+  min-width: 320px;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  box-sizing: border-box;
+  padding: 24px 20px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 60px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    padding: 66px 110px;
+  }
+}
+
+.using__text {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
+}
+
+.using__text:last-child {
+  margin-bottom: 0;
+}
