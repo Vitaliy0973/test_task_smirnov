@@ -8,7 +8,7 @@
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    padding: 50px 30px 30px 30px;
+    padding: 50px 30px 60px 30px;
   }
 
   @media (min-width: 1440px) {
@@ -71,11 +71,21 @@
     -webkit-border-image: -webkit-linear-gradient(#CED211 , #6C30AE);
     border-image-slice: 1;
     padding: 40px 330px 40px 45px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: 1440px) {
     min-height: 175px;
     padding: 51px 476px 51px 94px;
+    margin-bottom: 74px;
+  }
+}
+
+.connection__item:last-child {
+  margin-bottom: 65px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 

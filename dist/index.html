@@ -68,7 +68,7 @@
               с экрана) или при выводе устройствами, использующими шрифт Брайля.</p>
           </div>
         </section>
-        <section class="connection">
+        <section class="connection" id="3c">
           <div class="connection__wrapper">
             <h2 class="connection__title">Способы подключения CSS к документу</h2>
             <ul class="connection__list">
@@ -91,7 +91,72 @@
             </ul>
           </div>
         </section>
-
+        <section class="structure" id="4c">
+          <div class="structure__wrapper">
+            <h2 class="structure__title">Правила построения CSS</h2>
+            <div class="structure__block">
+              <p class="structure__text">В первых трёх случаях подключения стилей CSS к документу (см. выше) каждое правило CSS из файла имеет две основные части — селектор и блок объявлений. Селектор, расположенный в левой части правила до знака «{», определяет, на какие части документа (возможно, специально обозначенные) распространяется правило. Блок объявлений располагается в правой части правила. Он помещается в фигурные скобки, и, в свою очередь, состоит из одного или более объявлений, разделённых знаком «;». Каждое объявление представляет собой сочетание свойства CSS и значения, разделённых знаком «:». Селекторы могут группироваться в одной строке через запятую. В таком случае свойство применяется к каждому из них.</p>
+              <img src="./img/structure_img.jpg" alt="" class="structure__image">
+            </div>
+            <p class="structure__text">В четвёртом случае подключения CSS к документу (см. список) правило CSS, являющееся значением атрибута style элемента, к которому он применяется, представляет собой перечень объявлений («свойство CSS : значение»), разделённых знаком «;».</p>
+          </div>
+        </section>
+        <section class="selectors" id="5c">
+          <div class="selectors__wrapper">
+            <h2 class="selectors__title">Cелекторы</h2>
+            <p class="selectors__subtitle">виды селекторов</p>
+            <ul class="selectors__list">
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_1.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Универсальный селектор</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_2.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор тегов</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_3.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор классов</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_4.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор идентификаторов</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_5.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор атрибутов</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_6.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор потомков (контекстный селектор)</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_7.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор дочерних элементов</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_8.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор элементов одного уровня</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_9.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор псевдоклассов</p>
+              </li>
+              <li class="selectors__item">
+                <img src="./img/selectors_img/img_10.jpg" alt="" class="selectors__image">
+                <p class="selectors__text">Селектор псевдоэлементов</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="identifiers" id="6c">
+          <div class="identifiers__wrapper">
+            <h2 class="identifiers__title">Классы и идентификаторы элементов</h2>
+            <p class="identifiers__text">Класс или идентификатор может быть присвоен какому-нибудь элементу HTML посредством атрибутов class или id этого элемента:</p>
+            <img src="./img/identifiers_image.jpg" alt="" class="identifiers__image">
+            <p class="identifiers__text">Основное различие между классами элементов и идентификаторами элементов в том, что идентификатор предназначен для одного элемента, тогда как класс обычно присваивают сразу нескольким. Тем не менее, современные браузеры, как правило, корректно отображают множественные элементы с одинаковым идентификатором. Также различие в том, что могут существовать множественные классы (когда класс элемента состоит из нескольких слов, разделённых пробелами). Для идентификаторов такое невозможно.</p>
+          </div>
+        </section>
     </main>
     <footer>
   <div class="footer__wrapper">

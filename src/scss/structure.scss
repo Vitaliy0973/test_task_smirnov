@@ -1,0 +1,112 @@
+.structure__wrapper {
+  min-width: 320px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  box-sizing: border-box;
+  padding: 15px 20px 20px 20px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 50px 30px 60px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 36px 110px 76px 110px;
+  }
+}
+
+.structure__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #CCCE14;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: 1440px) {
+    z-index: 5;
+  }
+}
+
+.structure__block {
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 712px 420px;
+    column-gap: 88px;
+    position: relative;
+    padding-top: 65px;
+
+    &::before {
+      content: "";
+      width: 523px;
+      height: 523px;
+      position: absolute;
+      top: -60px;
+      left: 17px;
+      background-image: url(./../img/structure_ellipse_one.png);
+      background-size: 603px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after {
+      content: "";
+      width: 444px;
+      height: 444px;
+      position: absolute;
+      top: 15px;
+      right: 201px;
+      background-image: url(./../img/structure_ellipse_two.png);
+      background-size: 490px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.structure__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: 1440px) {
+    z-index: 5;
+  }
+}
+
+.structure__image {
+  width: 280px;
+  display: block;
+  margin: 20px auto 0 auto;
+
+  @media (min-width: 768px) {
+    width: 420px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: auto;
+    z-index: 5;
+  }
+}
